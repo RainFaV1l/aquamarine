@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .base-container {
+        @apply max-w-[1440px] px-5 lg:px-0 mx-auto;
+    }
+    .input {
+        @apply py-[18px] px-[30px]
+        text-base text-black
+        placeholder:font-bold border border-black border-opacity-25 w-full rounded-xl;
+    }
+    .form {
+        @apply flex flex-col items-start gap-[30px];
+    }
+    .button {
+        @apply flex items-center justify-center text-center py-[15px] px-[30px]
+        bg-accentBlue rounded-full transition duration-300 hover:bg-cyan-600;
+    }
+}
