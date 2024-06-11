@@ -15,8 +15,18 @@ export default {
             fontFamily: {
                 'montserrat': ['Montserrat, sans-serif'],
                 'flower': ['Indie Flower, sans-serif'],
-            }
+            },
+            
         },
+        screens: {
+            '450': '450px',
+            '500': '500px',
+            '800': '800px',
+            '1000': '1000px',
+            '1200': '1200px',
+            '1376': '1376px',
+            '1440': '1440px'
+        }
     },
     plugins: [],
 }

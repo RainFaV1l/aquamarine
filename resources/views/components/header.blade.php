@@ -1,6 +1,6 @@
 <div class="bg-accentDarkerBgBlue">
     <div class="container mx-auto py-[30px]">
-        <div class="flex flex-wrap items-center justify-between">
+        <div class="flex flex-wrap items-center justify-center 800:justify-between gap-[30px]">
             <x-logo/>
             <ul class="flex flex-wrap items-center gap-[30px]">
                 <li><a href="{{ route('index.home') }}">О нас</a></li>
@@ -15,14 +15,14 @@
                                 </span>
                             </button>
                         </x-slot>
-                        <ul class="w-full absolute mt-4 flex flex-col bg-accentBlue rounded-lg opacity-0" :class="{ 'opacity-100' : open }">
+                        <ul class="w-full absolute mt-4 flex flex- flex-col bg-accentBlue rounded-lg opacity-0" :class="{ 'opacity-100' : open }">
                             <li><a href="#" class="flex transition hover:bg-accentDarkerBgBlue py-4 px-7 rounded-t-lg">Profile</a></li>
                             <li><a href="#" class="flex transition hover:bg-accentDarkerBgBlue py-4 px-7">Settings</a></li>
                             <li><a href="#" class="flex transition hover:bg-accentDarkerBgBlue py-4 px-7 rounded-b-lg">Logout</a></li>
                         </ul>
                     </x-dropdown>
                 </li>
-                <li><a href="{{ route('index.home') }}">Тарифы</a></li>
+                <li><a href="{{ route('rate.index') }}">Тарифы</a></li>
             </ul>
             <div class="flex items-center gap-4">
                 <a href="{{ route('index.home') }}" class="button">Купить билет</a>
